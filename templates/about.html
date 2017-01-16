@@ -1,0 +1,47 @@
+<ion-view view-title="About">
+  <ion-content>
+    <div class="list">
+
+		<div class="item item-divider text-center">
+          Gorontalo Sinema
+        </div>
+
+        <a class="item item-icon-left">
+          <i class="icon ion-android-happy"></i>
+          App Version
+          <span class="item-note">
+            {{appVersi}}
+          </span>
+        </a>
+
+        <a class="item item-icon-left" ng-click="openInExternalBrowserTwitter()">
+          <i class="icon ion-social-twitter"></i>
+          Developer
+          <span class="item-note">
+            @crystrk
+          </span>
+        </a>
+
+        <a class="item item-icon-left" ng-click="openInExternalBrowserEmail()">
+          <i class="icon ion-android-mail"></i>
+          Kritik, Saran & Kerjasama
+          <span class="item-note">
+            
+          </span>
+        </a>
+		<div class="item item-divider text-center">
+			Gorontalo Sinema APK
+        </div>
+
+        <a class="item text-center" style="color:#cfaa7d;" onclick="window.plugins.socialsharing.share('Download Gorontalo Sinema APK', null, null, 'http://bit.ly/gorontalosinema')">
+           <i class="icon ion-android-share-alt"></i> 
+          Share Links
+          
+        </a>
+		<div class="text-center" style="color:#cfaa7d;padding-top:5px;">
+		http://bit.ly/gosinema
+		</div>
+		
+	</div>
+  </ion-content>
+</ion-view>

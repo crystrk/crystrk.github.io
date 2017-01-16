@@ -1,0 +1,20 @@
+<ion-view view-title="Now Playing">
+  <ion-content padding="true" class="abu" ng-class="getdata">
+    <ion-refresher style="color:#cfaa7d;" pulling-text="Pull to refresh..." on-refresh="showData()" spinner="lines">
+    </ion-refresher>
+    <ion-list>
+      
+	<a class="item item-thumbnail-left" ng-repeat="chat in chats" href="#/tab/now/{{chat.now_path}}/{{chat.now_kode}}" >
+	<img src="{{chat.now_poster}}" onerror="this.src='img/gto.png'"/>
+		<div>
+		<h3>{{chat.now_judul}}</h3>
+		<p>{{chat.now_sinopsis}}</p>        
+		  
+		
+        <i class="emas {{chat.now_icon}}" style="color: #cfaa7d;"> {{chat.now_harga}}</i>
+		</div>
+	</a>
+    </ion-list>
+	
+  </ion-content>
+</ion-view>
