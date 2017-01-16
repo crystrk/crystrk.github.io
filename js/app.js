@@ -8,8 +8,8 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ionic-toast'])
 
 .constant('APPVERSION','0.0.1')
-.constant('BASEURL', 'http://cryst.web.id/api/dev/nonton/')
-.constant('APKURL', 'http://cryst.web.id/apk/gorontalosinema/')
+.constant('BASEURL', 'https://cryst.web.id/api/dev/nonton/')
+.constant('APKURL', 'https://cryst.web.id/apk/gorontalosinema/')
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
