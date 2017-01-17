@@ -1,26 +1,34 @@
 <ion-view view-title="{{soonDetail.soon_judul}} GORONTALO SINEMA">
-  <ion-content class="padding abu">
-     
-    <div class="list card"  style="margin-top:0px;">
+  <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">{{soonDetail.soon_judul}}</span>
+          <div class="mdl-layout-spacer"></div>
+          
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media">
+                <img class="article-image" src="{{soonDetail.soon_poster}}" onerror="this.src='img/gto.png'" border="0" alt="">
+            </div>
+            <div class="mdl-card__supporting-text">
+            
+                <p class="padder" style="color: #3F51B5;display: inline-flex;"><i class="material-icons" style="vertical-align: baseline;">movie_filter</i> MOVIE DETAILS</p>
+                <span ng-bind-html="trust(soonDetail.soon_detail)"></span>
+                <br>
+                <p class="padder" style="color: #3F51B5;display: inline-flex;"><i class="material-icons">playlist_play</i> SYNOPSYS</p>
+                <p>{{soonDetail.soon_sinopsis}}</p>
+            </div>
 
-    <div class="item item-avatar abu2">
-      <h2 style="white-space: normal;text-align: center;">{{soonDetail.soon_judul}}</h2>
+              
+          </div>
+        </div>
+        
+      </main>
     </div>
-
-    <div class="item item-image abu2">
-     <img src="{{soonDetail.soon_poster}}" width="75%" height="400px" onerror="this.src='img/gto.png'">  </div>
-    <div class="item item-body abu2">
-     <p class="padder" style="color: #cfaa7d;"><i class="icon ion-film-marker"></i> MOVIE DETAILS</p>
-    <span ng-bind-html="trust(soonDetail.soon_detail)"></span>
-    </div>
-    <div class="item item-body abu2">
-     <p class="padder" style="color: #cfaa7d;"><i class="icon ion-document-text"></i> SYNOPSYS</p>
-     <p>{{soonDetail.soon_sinopsis}}</p>
-    </div>
-    
-      
-
-  </div>
-    
-  </ion-content>
 </ion-view>
