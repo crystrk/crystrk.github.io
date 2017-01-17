@@ -237,7 +237,7 @@ angular.module('starter.controllers', [])
 	};
 })
 
-.controller('XnowCtrl', function($scope,$stateParams,$ionicPopup,$ionicModal,$state, crystService, ionicToast, $sce) {
+.controller('XnowsinCtrl', function($scope,$stateParams,$ionicPopup,$ionicModal,$state, crystService, ionicToast, $sce) {
 	console.log('Xnow');
 
 	$scope.showDataId = function() {
@@ -246,7 +246,27 @@ angular.module('starter.controllers', [])
 		$scope.trust = $sce.trustAsHtml;
 		judul =  $scope.nowDetail.now_judul;
 		
-		if(typeof analytics !== "undefined") { window.analytics.trackView("X-Now : "+judul+""); }
+		if(typeof analytics !== "undefined") { window.analytics.trackView("X-Nowsin : "+judul+""); }
+	  }).error(function(dataChat) {
+	    ionicToast.show('Something went wrong, Try again later', 'middle',false, 1500);
+	  });  
+	  };
+
+	  $scope.showDataId();
+	
+	
+})
+
+.controller('XnowjamCtrl', function($scope,$stateParams,$ionicPopup,$ionicModal,$state, crystService, ionicToast, $sce) {
+	console.log('Xnow Jam');
+
+	$scope.showDataId = function() {
+	  crystService.ambilSatuNow($stateParams.nowId).success(function(dataChat) {
+	    $scope.nowDetail = dataChat;
+		$scope.trust = $sce.trustAsHtml;
+		judul =  $scope.nowDetail.now_judul;
+		
+		if(typeof analytics !== "undefined") { window.analytics.trackView("X-Nowjam : "+judul+""); }
 	  }).error(function(dataChat) {
 	    ionicToast.show('Something went wrong, Try again later', 'middle',false, 1500);
 	  });  

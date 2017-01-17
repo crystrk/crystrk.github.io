@@ -53,10 +53,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     templateUrl: "templates/about.html"
   })
 
-  .state('xnowplay', {
-    url: "/xnow/:nowId",
-  controller: 'XnowCtrl',
-    templateUrl: "templates/xnow.html"
+  .state('xnowplay-sin', {
+    url: "/xnowsin/:nowId",
+  controller: 'XnowsinCtrl',
+    templateUrl: "templates/xnowsin.html"
+  })
+
+  .state('xnowplay-jam', {
+    url: "/xnowjam/:nowId",
+  controller: 'XnowsinCtrl',
+    templateUrl: "templates/xnowjam.html"
   })
 
   .state('xcomingsoon', {

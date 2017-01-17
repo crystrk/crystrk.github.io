@@ -76,3 +76,16 @@ img.article-image {
     background-color: #283593;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
+h6 {
+    font-weight: 700;
+    margin: 0 0 3px 0;
+    font-size: 10px;
+}
+
+.time {
+    padding: 0 5px;
+}
