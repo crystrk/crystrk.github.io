@@ -18,7 +18,7 @@
             </div>
             <div class="mdl-card__supporting-text">
             
-                <p class="padder" style="color: #3F51B5;display: inline-flex;"><i class="material-icons" style="vertical-align: baseline;">query_builder</i> SCHEDULE {{ today | date : "dd.MM.y" }}</p>
+                <p class="padder" style="color: #3F51B5;display: inline-flex;"><i class="material-icons" style="vertical-align: baseline;">query_builder</i> SCHEDULE {{ nowDetail.now_tgl | date : "dd.MM.y" }}</p>
                 <span ng-bind-html="trust(nowDetail.now_jadwal)"></span>
                 
             </div>
