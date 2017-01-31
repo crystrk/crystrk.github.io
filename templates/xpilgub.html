@@ -1,0 +1,41 @@
+<ion-view view-title="VOTER TERBARU - PILGUB GORONTALO">
+  <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">VOTERS PILGUB GORONTALO</span>
+          <div class="mdl-layout-spacer"></div>
+          
+        </div>
+      </header>
+      <div class="demo-ribbon" style="background-color: #757575;"></div>
+      <main class="demo-main mdl-layout__content">
+        
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <ul class="demo-list-two mdl-list">
+
+              <li class="mdl-list__item mdl-list__item--two-line" ng-repeat="chat in chats">
+                <span class="mdl-list__item-primary-content">
+                  <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+                  <img src="{{chat.profile_pic}}" class="mdl-list__item-avatar">
+                  <span>{{chat.first_name}}</span>
+                  <span class="mdl-list__item-sub-title">{{chat.tgl_vote | cmdate:'d MMMM yyyy'}} </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <span class="mdl-list__item-secondary-info">Vote</span>
+                  <a class="mdl-list__item-secondary-action" ng-if="chat.vote == 1" style="color: #C62828"><i class="material-icons">filter_1</i></a>
+                  <a class="mdl-list__item-secondary-action" ng-if="chat.vote == 2" style="color: #F9A825"><i class="material-icons">filter_2</i></a>
+                  <a class="mdl-list__item-secondary-action" ng-if="chat.vote == 3" style="color: #3F51B5"><i class="material-icons">filter_3</i></a>
+                </span>
+              </li>              
+              
+            </ul>
+
+              
+          </div>
+        </div>
+        
+      </main>
+    </div>
+</ion-view>

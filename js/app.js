@@ -11,6 +11,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 .constant('BASEURL', 'https://cryst.web.id/api/dev/nonton/')
 .constant('APKURL', 'https://cryst.web.id/apk/gorontalosinema/')
 
+.filter('cmdate', [
+    '$filter', function($filter) {
+        return function(input, format) {
+            return $filter('date')(new Date(input), format);
+        };
+    }
+])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -69,6 +77,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "/xsoon/:soonId",
   controller: 'XsoonCtrl',
     templateUrl: "templates/xsoon.html"
+  })
+
+
+  .state('xpilgub-2017', {
+    url: "/voters-pilgub",
+  controller: 'XpilgubCtrl',
+    templateUrl: "templates/xpilgub.html"
   })
 
   // Each tab has its own nav history stack:

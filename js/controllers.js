@@ -296,4 +296,34 @@ angular.module('starter.controllers', [])
 	
 })
 
+
+.controller('XpilgubCtrl', function($scope,$stateParams,$ionicPopup,$ionicModal,$state, crystService, ionicToast, $sce) {
+	console.log('X pilgub');	
+
+	$scope.showData = function() {
+	  
+    crystService.ambilVoters().success(function(dataChat) {
+
+    	// console.log(dataChat);
+		
+      $scope.chats = dataChat;
+	  	  
+	  $scope.getdata = "";
+
+    }).error(function(dataChat) {
+      
+	 
+    }).finally(function() {
+			
+			
+        });
+  };
+  
+  $scope.showData();
+
+  console.log($scope.chats);
+	
+	
+})
+
 ;

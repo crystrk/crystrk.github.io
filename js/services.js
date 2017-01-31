@@ -18,6 +18,9 @@ angular.module('starter.services', [])
 		ambilSatuAds: function (ads_id){
             return $http.get(BASEURL+APPVERSION+'/select_ads_id.php?id='+ads_id, {timeout: 10000}); 
         },
+        ambilVoters: function (){
+            return $http.get('http://cryst.web.id/api/dev/pilgub2017/slim/last_voters', {timeout: 10000}); 
+        },
 		ambilVersion: function (){
             return $http.get(APKURL+'version.php', {timeout: 10000}); 
         }
