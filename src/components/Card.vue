@@ -2,15 +2,22 @@
     <div class="column col-4 col-md-6 col-sm-12">
         <div class="card">
             <div class="card-image">
-                <img class="img-responsive" :src="image" alt="macOS Sierra">
+                <img class="img-responsive" :src="image.thumb">
             </div>
             <div class="card-header">
                 <button class="btn btn-primary float-right" @click="showModal"><i class="icon icon-search"></i></button>
-                <div class="card-title h5">{{ judul }}</div>
+                <div class="card-title text-ellipsis h5">{{ judul }}</div>
                 <div class="card-subtitle text-gray">{{ subjudul }}</div>
             </div>
         </div>
-        <modal v-show="isActive" :judul="judul" v-on:tutup="closeModal()"></modal>
+        <modal v-show="isActive"
+                :year="year"
+                :judul="judul"
+                :subjudul="subjudul"
+                :desc="desc"
+                :image="image"
+                :link="link"
+                v-on:tutup="closeModal()"></modal>
     </div>
 </template>
 
@@ -26,6 +33,7 @@ export default {
             'subjudul',
             'year',
             'desc',
+            'link',
             'image'
             ],
 
