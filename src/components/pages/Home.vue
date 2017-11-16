@@ -1,16 +1,17 @@
 <template>
-    <div class="columns">
-        <div class="column col-4 col-md-6 col-sm-12 col-mx-auto">
-            <div class="panel">
-                <div class="panel-header text-center">
-                    <figure class="avatar avatar-lg" data-initial="CK">
-                    </figure>
-                    <div class="panel-title h5 mt-10">Crystal K</div>
-                    <div class="panel-subtitle">Web Developer</div>
-                </div>
-                <nav class="panel-nav">
-                    <ul class="tab tab-block">
-                        <li class="tab-item active">
+    <div>
+        <div class="columns">
+            <div class="column col-4 col-md-6 col-sm-12 col-mx-auto">
+                <div class="panel">
+                    <div class="panel-header text-center">
+                        <figure class="avatar avatar-lg" data-initial="CK">
+                        </figure>
+                        <div class="panel-title h5 mt-10">Crystal K</div>
+                        <div class="panel-subtitle">Web Developer</div>
+                    </div>
+                    <nav class="panel-nav">
+                        <ul class="tab tab-block">
+                            <li class="tab-item active">
                             <!-- <a href="#panels">
                                 &nbsp;
                             </a> -->
@@ -63,15 +64,22 @@
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <button class="btn btn-primary btn-block">Recent Projects</button>
+                    <button class="btn btn-primary btn-block">Recent Projects <i class="icon icon-caret"></i></button>
                 </div>
             </div>
         </div>
     </div>
+    <projects></projects>
+</div>
 </template>
 
 <script>
+import Projects from '@/components/pages/Projects'
+
 export default {
+    components: {
+        Projects
+    },
     name: 'Home'
 }
 </script>
