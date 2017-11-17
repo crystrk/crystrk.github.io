@@ -29,53 +29,40 @@ export default {
             //new to old
                 {
                     year: 'Oct 2017',
-                    judul: 'met mauris Aliquam vitae nulla sit amet mauris',
-                    subjudul: 'SubProject 1 ',
-                    desc: 'Aliquam vitae nulla sit amet mauris ... Quisque malesuada sed',
-                    link: 'https://www.google.com',
+                    judul: 'Sistem KGB PNS Kota Gorontalo',
+                    subjudul: 'BKPP Kota Gorontalo',
+                    desc: 'Sistem Usulan Kenaikan Gaji Berkala PNS Kota Gorontalo yang terintegrasi dengan aplikasi SIMPEG Kota Gorontalo',
+                    link: 'https://simpeg.gorontalokota.go.id/aplikasi-kepegawaian',
                     image: {
-                        thumb: 'https://cdn.dribbble.com/users/588347/screenshots/1834553/preview.jpg',
-                        preview1: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/8420415/tunnel_boring_company_borer.jpg',
-                        preview2: 'http://spacenews.com/wp-content/uploads/2016/05/spacex-price.gif',
+                        thumb: 'src/assets/kgb2017/thumb.png',
+                        preview1: 'src/assets/kgb2017/app1.png',
+                        preview2: 'src/assets/kgb2017/app2.png',
                     }
                 },
                 {
-                    year: 'Oct 2017',
-                    judul: 'Proquam vitae nulla sit amet mauris',
-                    subjudul: 'SubProject 1 ',
-                    desc: 'Aliquam vitae nulla sit amet mauris ... Quisque malesuada sed',
-                    link: null,
+                    year: 'May 2017',
+                    judul: 'Sistem Kenaikan Pangkat PNS Kota Gorontalo',
+                    subjudul: 'BKPP Kota Gorontalo',
+                    desc: 'Sistem Usulan Kenaikan Pangkat PNS Kota Gorontalo yang terintegrasi dengan data SIMPEG Kota Gorontalo',
+                    link: 'https://simpeg.gorontalokota.go.id/aplikasi-kepegawaian',
                     image: {
-                        thumb: 'https://placeimg.com/640/480/tech',
-                        preview1: 'https://placeimg.com/640/480/any',
-                        preview2: 'https://placeimg.com/640/480/arch',
+                        thumb: 'src/assets/kenpa2017/thumb.png',
+                        preview1: 'src/assets/kenpa2017/app1.png',
+                        preview2: 'src/assets/kenpa2017/app2.png',
                     }
                 },
                 {
-                    year: 'Oct 2017',
-                    judul: 'Project 1 Aliquam vitae nulla sit amet mauris Aliquam vitae nulla sit amet mauris',
-                    subjudul: 'SubProject 1 ',
-                    desc: 'Aliquam vitae nulla sit amet mauris ... Quisque malesuada sed',
-                    link: 'https://www.google.com',
+                    year: 'April 2017',
+                    judul: 'Website profile BKPP Kota Gorontalo',
+                    subjudul: 'BKPP Kota Gorontalo',
+                    desc: 'Website profile BKPP Kota gorontalo yang terintegrasi dengan data SIMPEG Kota Gorontalo',
+                    link: 'https://simpeg.gorontalokota.go.id',
                     image: {
-                        thumb: 'https://placeimg.com/640/480/arch',
-                        preview1: 'https://placeimg.com/640/480/any',
-                        preview2: 'https://placeimg.com/640/480/tech',
+                        thumb: 'src/assets/profile-bkpp2017/thumb.png',
+                        preview1: 'src/assets/profile-bkpp2017/app1.png',
+                        preview2: 'src/assets/profile-bkpp2017/app2.png',
                     }
                 },
-                {
-                    year: 'Oct 2017',
-                    judul: 'Projlla sit amet mauris',
-                    subjudul: 'SubProject 1 ',
-                    desc: 'Aliquam vitae nulla sit amet mauris ... Quisque malesuada sed',
-                    link: 'https://www.google.com',
-                    image: {
-                        thumb: 'https://placeimg.com/640/480/animals',
-                        preview1: 'https://placeimg.com/640/480/tech',
-                        preview2: 'https://placeimg.com/640/480/any',
-                    }
-                },
-
 
             ]
         }
