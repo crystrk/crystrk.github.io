@@ -40,6 +40,18 @@ export default {
                     }
                 },
                 {
+                    year: 'Juli 2017',
+                    judul: 'E-Report Kependudukan',
+                    subjudul: 'RumahIT G26 - Kab. Gorontalo',
+                    desc: 'Aplikasi E-Report Kependudukan yang dilengkapi dengan sistem surat kependudukan',
+                    link: 'http://kabgor.rumahitg26.com',
+                    image: {
+                        thumb: 'src/assets/ereport2017/thumb.png',
+                        preview1: 'src/assets/ereport2017/app1.png',
+                        preview2: 'src/assets/ereport2017/app2.png',
+                    }
+                },
+                {
                     year: 'May 2017',
                     judul: 'Sistem Kenaikan Pangkat PNS Kota Gorontalo',
                     subjudul: 'BKPP Kota Gorontalo',
