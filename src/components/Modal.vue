@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <div class="content">
                     <blockquote>
-                        <p>{{ desc }}</p>
+                        <p v-html="desc"></p>
                     </blockquote>
                     <div class="divider text-center" data-content="PREVIEW"></div>
                     <img class="img-responsive" :src="image.preview1">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a :href="link" target="_blank" class="btn tooltip" data-tooltip="Demo / Aplikasi" v-if="link !== null">
+                <a :href="link" target="_blank" class="btn tooltip" :data-tooltip="link" v-if="link !== null">
                     <i class="icon icon-link"></i>
                 </a>
                 <button class="btn badge">

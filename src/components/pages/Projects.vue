@@ -75,7 +75,66 @@ export default {
                         preview2: 'src/assets/profile-bkpp2017/app2.png',
                     }
                 },
-
+                {
+                    year: 'Des 2016',
+                    judul: 'SIM-TAGAR',
+                    subjudul: 'Inspektorat Kota Gorontalo - CV MITI Global',
+                    desc: 'Sistem Informasi  TPTGR  Inspektorat Kota Gorontalo, disini saya mengerjakan modul <i><b>operator temuan, angsuran, dan laporan</b></i>',
+                    link: null,
+                    image: {
+                        thumb: 'src/assets/simtagar2016/thumb.jpg',
+                        preview1: 'src/assets/simtagar2016/app1.jpg',
+                        preview2: 'src/assets/simtagar2016/app2.jpg',
+                    }
+                },
+                {
+                    year: 'Sept 2016',
+                    judul: 'Sistem Monitoring Pipeline Bank Mandiri Syariah',
+                    subjudul: 'Mandiri Syariah - Makassar',
+                    desc: 'Sistem Monitoring Pipeline Bank Mandiri Syariah area Makassar, digunakan marketing untuk melaporkan calon nasabah potensial',
+                    link: 'http://ewako1.com',
+                    image: {
+                        thumb: 'src/assets/bsm2016/thumb.jpg',
+                        preview1: 'src/assets/bsm2016/app1.jpg',
+                        preview2: 'src/assets/bsm2016/app2.jpg',
+                    }
+                },
+                {
+                    year: 'Des 2015',
+                    judul: 'E-IMB  Mobile Kota Gorontalo V.2',
+                    subjudul: 'Dinas Tata Kota Gorontalo',
+                    desc: 'Aplikasi mobile IMB Dinas Tata Kota Gorontalo berbasis intranet (jaringan lokal) & Android  (webview)',
+                    link: null,
+                    image: {
+                        thumb: 'src/assets/mobile-e-imb2015/thumb.jpg',
+                        preview1: 'src/assets/mobile-e-imb2015/app1.jpg',
+                        preview2: 'src/assets/mobile-e-imb2015/app2.jpg',
+                    }
+                },
+                {
+                    year: 'Des 2015',
+                    judul: 'E-IMB  Pointing',
+                    subjudul: 'Dinas Tata Kota Gorontalo',
+                    desc: 'Aplikasi pointing lokasi IMB untuk petugas lapangan yang berbasis Android',
+                    link: null,
+                    image: {
+                        thumb: 'src/assets/pointing-e-imb2015/thumb.png',
+                        preview1: 'src/assets/pointing-e-imb2015/app1.png',
+                        preview2: 'src/assets/pointing-e-imb2015/thumb.png',
+                    }
+                },
+                {
+                    year: 'Des 2015',
+                    judul: 'E-IMB Kota Gorontalo V.2',
+                    subjudul: 'Dinas Tata Kota Gorontalo',
+                    desc: 'Aplikasi IMB Dinas Tata Kota Gorontalo berbasis intranet (jaringan lokal)',
+                    link: null,
+                    image: {
+                        thumb: 'src/assets/e-imb2015/thumb.jpg',
+                        preview1: 'src/assets/e-imb2015/app1.jpg',
+                        preview2: 'src/assets/e-imb2015/app2.jpg',
+                    }
+                },
             ]
         }
     }
