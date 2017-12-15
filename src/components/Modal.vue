@@ -12,9 +12,13 @@
                         <p v-html="desc"></p>
                     </blockquote>
                     <div class="divider text-center" data-content="PREVIEW"></div>
-                    <img class="img-responsive" :src="image.preview1">
+                    <progressive-img class="img-responsive" :src="image.preview1"
+                                            placeholder="src/assets/loading.jpg"
+                                            :blur="30"> </progressive-img>
                     <div class="divider"></div>
-                    <img class="img-responsive" :src="image.preview2">
+                    <progressive-img class="img-responsive" :src="image.preview1"
+                                            placeholder="src/assets/loading.jpg"
+                                            :blur="30"> </progressive-img>
                 </div>
             </div>
             <div class="modal-footer">

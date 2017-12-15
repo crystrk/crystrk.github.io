@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import VueLazyload from 'vue-lazyload'
+import VueProgressiveImage from 'vue-progressive-image'
 import router from './router'
 
 Vue.config.productionTip = false
 
-Vue.use(VueLazyload)
+Vue.use(VueProgressiveImage, {
+    // delay: 5000 // 2 seconds before the image is displayed
+})
 
 /* eslint-disable no-new */
 new Vue({
