@@ -16,7 +16,7 @@
                                             placeholder="src/assets/loading.jpg"
                                             :blur="30"> </progressive-img>
                     <div class="divider"></div>
-                    <progressive-img class="img-responsive" :src="image.preview1"
+                    <progressive-img class="img-responsive" :src="image.preview2"
                                             placeholder="src/assets/loading.jpg"
                                             :blur="30"> </progressive-img>
                 </div>
